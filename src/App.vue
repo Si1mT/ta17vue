@@ -1,21 +1,24 @@
 <template>
     <div>
-        <button class="button" @click="kitten=true">Kitten</button>
-        <button class="button" @click="bear=true">Bear</button>
-        <img-modal src="https://placekitten.com/1280/960/" :toggle="kitten" @close="kitten=false"></img-modal>
-        <img-modal src="https://placebear.com/1280/960" :toggle="bear" @close="bear=false"></img-modal>
+        <tabs :tabs="tabs"></tabs>
     </div>
 </template>
 
 <script>
-    import ImgModal from "./components/ImgModal.vue";
+
+    import Tabs from "./components/Tabs.vue";
     export default {
         name: "App",
-        components: {ImgModal},
+        components: {Tabs},
         data(){
             return {
-                bear: false,
-                kitten: false
+                tabs: [
+                    {title:'Pictures', content: '<b>some cool Pictures</b>'},
+                    {title:'Music', content: '<b>some cool Music</b>'},
+                    {title:'Videos', content: '<b>some cool Videos</b>'},
+                    {title:'Documents', content: '<b>some cool Documents</b>'},
+                    {title:'Games', content: '<b>some cool Games</b>'},
+                ]
             }
         }
     }
