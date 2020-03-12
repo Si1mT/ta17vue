@@ -1,6 +1,10 @@
 <template>
     <div>
-        <button :disabled="disabled" class="button is-warning" @click="$emit('incrCps', cps)">Add {{ cps }} cps</button>
+        <button :disabled="disabled"
+                class="button is-warning"
+                @click="$emit('incrCps', cps)">
+            Add {{ cps }} cps
+        </button>
     </div>
 </template>
 

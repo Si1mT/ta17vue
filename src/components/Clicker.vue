@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img
+        <img style="cursor: pointer"
              height="100"
              width="100"
              @click="$emit('incr')"
