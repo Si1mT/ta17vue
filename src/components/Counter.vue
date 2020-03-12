@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{ Math.floor(value)}}
+        <p>{{ Math.floor(value)}} Cookies</p>
     </div>
 </template>
 

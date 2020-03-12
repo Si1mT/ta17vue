@@ -1,7 +1,7 @@
 <template>
     <div>
         <clicker @incr="count++"></clicker>
-        <counter :value="count"></counter>
+        <counter :value="count"><a>Cookies</a></counter>
         <upgrade
                 v-for="upgrade in upgrades"
                 :cps="upgrade.cps"
